@@ -1,0 +1,160 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-arial-caps/css/bpg-arial-caps.min.css");
+body {
+  font-size: 14px;
+  color: #ffff;
+}
+* {
+  box-sizing: border-box;
+}
+.register__form {
+  width: 800px;
+  height: 700px;
+  background-color: #424242;
+  margin: 50px auto;
+  padding: 30px 50px;
+  position: relative;
+  display: flex;
+}
+input {
+  text-indent: 20px;
+}
+.form {
+  width: 100%;
+}
+.form-group {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-group label {
+  margin-right: 20px;
+  width: 200px;
+  height: 34px;
+  line-height: 34px;
+  text-align: right;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+.form-group label span {
+  color: red;
+  margin-left: 5px;
+}
+.form-control {
+  width: 280px;
+  height: 34px;
+  background: #616161;
+  border: none;
+  outline: none;
+  position: relative;
+  color: #ffff;
+  font-family: "BPG Arial Caps", sans-serif;
+}
+
+.reg-button {
+  width: 280px;
+  padding: 10px;
+  background: #cecece;
+  border: none;
+  color: #1b1b1b;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.2s ease;
+  font-weight: bold;
+  font-family: "BPG Arial Caps", sans-serif;
+  font-size: 16px;
+}
+
+.reg-button:hover {
+  cursor: pointer;
+  background: #43a047;
+  color: #ffff;
+}
+.field-status {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.field-status .close {
+  width: 100%;
+  height: 100%;
+  color: red;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+}
+.field-status .check {
+  color: green;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  line-height: 34px;
+  text-align: center;
+  background-color: #bdbdbd;
+}
+
+.field-status.bg-color {
+  background-color: transparent;
+}
+
+.attention-text {
+  position: absolute;
+  content: "";
+  width: 200px;
+  border-radius: 2px;
+  background: #fff;
+  left: 104%;
+  z-index: 99;
+  top: 0;
+  padding: 10px;
+  color: #a21d1d;
+  font-weight: 600;
+  font-size: 13px;
+}
+.attention-text:before {
+  content: "";
+  position: absolute;
+  left: -9px;
+  top: 9px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid white;
+}
+
+#birthday-date {
+  width: 98px;
+  margin-left: 0px;
+}
+#birthday-month {
+  width: 75px;
+  margin-left: 10px;
+}
+#birthday-year {
+  width: 86px;
+  margin-left: 10px;
+}
+.form-group select {
+  height: 34px !important;
+  background: #616161;
+  border: none;
+  text-indent: 10px !important;
+  font-size: 13px;
+  color: #ffff;
+  font-family: "BPG Arial Caps", sans-serif;
+  border-bottom: 1px solid transparent;
+  outline: none;
+}
+
+.form-group select.borderline {
+  border-bottom: 1px solid #ff6d6d;
+}
+
+.form-control:focus {
+  background-color: #fff;
+  color: black;
+}
